@@ -1,4 +1,5 @@
 <script>
+	import "@picocss/pico"
 	import favicon from '#lib/assets/favicon.svg';
 
 	/** @type {{children: import('svelte').Snippet}} */
@@ -9,4 +10,6 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
+<main class="container">
 {@render children()}
+</main>
